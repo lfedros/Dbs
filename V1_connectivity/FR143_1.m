@@ -20,7 +20,7 @@ db(i).stimType      = {'sparseNoise', 'oriMultiSfTf'};
 db(i).starterID     = 1;
 db(i).ObjZ          = 0;
 db(i).waveL         = [890 890 780 970 1020];
-db(i).starterYX =  [278, 248, NaN];
+db(i).starterYX =  [278, 248, 10];
 
 i = i+1;
 db(i).mouse_name    = 'FR143';

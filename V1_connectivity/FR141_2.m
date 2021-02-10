@@ -21,7 +21,7 @@ db(i).stimType      = {'sparseNoise', 'oriMultiSfTf'};
 db(i).starterID     = 2;
 db(i).ObjZ          = 0;
 db(i).waveL         = [910 910 780 1020];
-db(i).starterYXPlane =  [267, 255, NaN];
+db(i).starterYXPlane =  [267, 255, 8];
 
 i = i+1;
 db(i).mouse_name    = 'FR141';
@@ -32,7 +32,7 @@ db(i).stimType      = {'sparseNoise', 'oriMultiSfTf'};
 db(i).starterID     = 2;
 db(i).ObjZ          = 125;
 db(i).waveL         = [970 970 970 890 780 1020];
-db(i).starterYXPlane =  [267, 255, -1];
+db(i).starterYXPlane =  [267, 255, NaN];
 
 i = i+1;
 db(i).mouse_name    = 'FR141';
