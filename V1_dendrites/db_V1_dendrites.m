@@ -21,7 +21,7 @@ db(i).morph.dendrotomy    = {0, []};
 db(i).retino.expRef  = {'', '', NaN};   % expref of best retinotopy {'animal_name', 'expDate', expnum} 
 db(i).retino.expID   = 1;           % best retinotopy exp ID
 db(i).retino.zoom    = 1.9;         % imaging zoom for retinotopy
-db(i).retino.somaYX  = [NaN NaN];   % position of the soma on the retinotopy FOV in pixels from top left corner
+db(i).retino.somaYX  = [270 260];   % position of the soma on the retinotopy FOV in pixels from top left corner
 db(i).prefDir        = 303;         % preferred orientation measured at the soma
 
 i = i+1;
@@ -38,7 +38,7 @@ db(i).morph.dendrotomy    = {0, []};
 db(i).retino.expRef  = {'', '', NaN};   
 db(i).retino.expID   = 1;           
 db(i).retino.zoom    = 1.6;         
-db(i).retino.somaYX  = [NaN NaN];   
+db(i).retino.somaYX  = [267 268];   
 db(i).prefDir        = 109;         
 
 i = i+1;
@@ -55,7 +55,7 @@ db(i).morph.dendrotomy    = {0, []};
 db(i).retino.expRef  = {'', '', NaN};   
 db(i).retino.expID   = 1;           
 db(i).retino.zoom    = 1.6;         
-db(i).retino.somaYX  = [NaN NaN];   
+db(i).retino.somaYX  = [267 255];   
 db(i).prefDir        = 40;      
 
 i = i+1;
@@ -72,7 +72,7 @@ db(i).morph.dendrotomy    = {0, []};
 db(i).retino.expRef  = {'', '', NaN};   
 db(i).retino.expID   = 1;           
 db(i).retino.zoom    = 1.6;         
-db(i).retino.somaYX  = [NaN NaN];   
+db(i).retino.somaYX  = [236 240];   
 db(i).prefDir        = 85;      
 
 i = i+1;
@@ -89,7 +89,7 @@ db(i).morph.dendrotomy    = {0, []};
 db(i).retino.expRef  = {'', '', NaN};   
 db(i).retino.expID   = 2;           
 db(i).retino.zoom    = 1.6;         
-db(i).retino.somaYX  = [NaN NaN];   
+db(i).retino.somaYX  = [288 240];   
 db(i).prefDir        = 196;      
 
 i = i+1;
@@ -106,7 +106,7 @@ db(i).morph.dendrotomy    = {0, []};
 db(i).retino.expRef  = {'', '', NaN};   
 db(i).retino.expID   = 1;           
 db(i).retino.zoom    = 1.6;         
-db(i).retino.somaYX  = [NaN NaN];   
+db(i).retino.somaYX  = [243 254];   
 db(i).prefDir        = 269;      
 
 i = i+1;
@@ -123,7 +123,7 @@ db(i).morph.dendrotomy    = {0, []};
 db(i).retino.expRef  = {'', '', NaN};   
 db(i).retino.expID   = 1;           
 db(i).retino.zoom    = 1.4;         
-db(i).retino.somaYX  = [NaN NaN];   
+db(i).retino.somaYX  = [238 237];   
 db(i).prefDir        = 96;      
 
 i = i+1;
@@ -140,7 +140,7 @@ db(i).morph.dendrotomy    = {0, []};
 db(i).retino.expRef  = {'', '', NaN};   
 db(i).retino.expID   = 3;           
 db(i).retino.zoom    = 1.6;         
-db(i).retino.somaYX  = [NaN NaN];   
+db(i).retino.somaYX  = [292 205];   
 db(i).prefDir        = 317;      
 
 i = i+1;
@@ -157,7 +157,7 @@ db(i).morph.dendrotomy    = {0, []};
 db(i).retino.expRef  = {'', '', NaN};   
 db(i).retino.expID   = 3;           
 db(i).retino.zoom    = 1.4;         
-db(i).retino.somaYX  = [NaN NaN];   
+db(i).retino.somaYX  = [268 256];   
 db(i).prefDir        = 30;      
 
 i = i+1;
@@ -174,7 +174,7 @@ db(i).morph.dendrotomy    = {0, []};
 db(i).retino.expRef  = {'', '', NaN};   
 db(i).retino.expID   = 3;           
 db(i).retino.zoom    = 1.3;         
-db(i).retino.somaYX  = [NaN NaN];   
+db(i).retino.somaYX  = [212 273];   
 db(i).prefDir        = 174;      
 
 i = i+1;
@@ -191,7 +191,7 @@ db(i).morph.dendrotomy    = {0, []};
 db(i).retino.expRef  = {'', '', NaN};   
 db(i).retino.expID   = 2;           
 db(i).retino.zoom    = 1.4;         
-db(i).retino.somaYX  = [NaN NaN];   
+db(i).retino.somaYX  = [301 203];   
 db(i).prefDir        = 243;      
 
 i = i+1;
@@ -208,7 +208,7 @@ db(i).morph.dendrotomy    = {0, []};
 db(i).retino.expRef  = {'', '', NaN};   
 db(i).retino.expID   = 2;           
 db(i).retino.zoom    = 1.4;         
-db(i).retino.somaYX  = [NaN NaN];   
+db(i).retino.somaYX  = [238 246];   
 db(i).prefDir        = 83;      
 
 i = i+1;
@@ -225,7 +225,7 @@ db(i).morph.dendrotomy    = {0, []};
 db(i).retino.expRef  = {'', '', NaN};   
 db(i).retino.expID   = 4;           
 db(i).retino.zoom    = 1.6;         
-db(i).retino.somaYX  = [NaN NaN];   
+db(i).retino.somaYX  = [267 255];   
 db(i).prefDir        = 330;      
 
 i = i+1;
@@ -242,7 +242,7 @@ db(i).morph.dendrotomy    = {0, []};
 db(i).retino.expRef  = {'', '', NaN};   
 db(i).retino.expID   = 2;           
 db(i).retino.zoom    = 1.5;         
-db(i).retino.somaYX  = [NaN NaN];   
+db(i).retino.somaYX  = [241 265];   
 db(i).prefDir        = 195;      
 
 i = i+1;
@@ -259,7 +259,7 @@ db(i).morph.dendrotomy    = {0, []};
 db(i).retino.expRef  = {'', '', NaN};   
 db(i).retino.expID   = 4;           
 db(i).retino.zoom    = 1.4;         
-db(i).retino.somaYX  = [NaN NaN];   
+db(i).retino.somaYX  = [251 184];   
 db(i).prefDir        = 97;      
 
 i = i+1;
@@ -276,8 +276,8 @@ db(i).morph.dendrotomy    = {0, []};
 db(i).retino.expRef  = {'', '', NaN};   
 db(i).retino.expID   = 4;           
 db(i).retino.zoom    = 1.4;         
-db(i).retino.somaYX  = [NaN NaN];   
-db(i).prefDir        = NaN;      
+db(i).retino.somaYX  = [197 169];   
+db(i).prefDir        = 290;      
 
 i = i+1;
 db(i).animal = 'FR150';
@@ -293,7 +293,7 @@ db(i).morph.dendrotomy    = {0, []};
 db(i).retino.expRef  = {'', '', NaN};   
 db(i).retino.expID   = 1;           
 db(i).retino.zoom    = 1.6;         
-db(i).retino.somaYX  = [NaN NaN];   
+db(i).retino.somaYX  = [263, 258];   
 db(i).prefDir        = 70;      
 
 %% Sparse labelling datasets
@@ -398,8 +398,8 @@ db(i).morph.dendrotomy    = {1, 'para'};
 db(i).retino.expRef  = {'FR172', '2020-10-30', 1};   
 db(i).retino.expID   = 1;           
 db(i).retino.zoom    = 1.6;         
-db(i).retino.somaYX  = [NaN NaN];   
-db(i).prefDir        = NaN;      
+db(i).retino.somaYX  = [312 280];   
+db(i).prefDir        = 330;      
 
 i = i+1;
 db(i).animal = 'FR172';
@@ -415,8 +415,8 @@ db(i).morph.dendrotomy    = {1, 'para'};
 db(i).retino.expRef  = {'FR172', '2020-10-30', 1}; 
 db(i).retino.expID   = 1;           
 db(i).retino.zoom    = 1.6;         
-db(i).retino.somaYX  = [NaN NaN];   
-db(i).prefDir        = NaN;      
+db(i).retino.somaYX  = [228 193];   
+db(i).prefDir        = 120;      
 
 i = i+1;
 db(i).animal = 'FR172';
@@ -432,8 +432,8 @@ db(i).morph.dendrotomy    = {1, 'para'};
 db(i).retino.expRef  = {'FR172', '2020-10-30', 1};    
 db(i).retino.expID   = 1;           
 db(i).retino.zoom    = 1.6;         
-db(i).retino.somaYX  = [NaN NaN];   
-db(i).prefDir        = NaN;      
+db(i).retino.somaYX  = [246 218];   
+db(i).prefDir        = 350;      
 
 i = i+1;
 db(i).animal = 'FR172';
@@ -449,8 +449,8 @@ db(i).morph.dendrotomy    = {1, 'para'};
 db(i).retino.expRef  = {'FR172', '2020-10-30', 1};
 db(i).retino.expID   = 1;           
 db(i).retino.zoom    = 1.6;         
-db(i).retino.somaYX  = [NaN NaN];   
-db(i).prefDir        = NaN;      
+db(i).retino.somaYX  = [297 291];   
+db(i).prefDir        = 210;      
 
 i = i+1;
 db(i).animal = 'FR175';
