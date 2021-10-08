@@ -65,3 +65,5 @@ db(i).starterID     = 1;
 db(i).waveL         = [970 970 1020 890 780];
 db(i).ObjZ          = 90+125+125;
 db(i).starterYX=  [278, 248, NaN];
+
+

@@ -9,20 +9,28 @@ db_den = db; clear db;
 
 nDb = numel(db_den);
 
-for iDb = 1:nDb
+%% sync retinotopy
+
+for iDb = 49
     
     expID = db_den(iDb).retino.expID;
     
     try
-        root = 'C:\Users\Federico\Google Drive\CarandiniLab\CarandiniLab_MATLAB\Data\rvRetinotopy';
-        retDir = fullfile(root, db_den(iDb).morph.expRef{1});
-        file = sprintf('%s_%d_neuRF_column_svd.mat', db_den(iDb).morph.expRef{1}, db_den(iDb).neuron_id);
-        retino = load(fullfile(retDir, file), 'retX', 'retY', 'micronsX', 'micronsY');
+%         root = 'C:\Users\Federico\Google Drive\CarandiniLab\CarandiniLab_MATLAB\Data\rvRetinotopy';
+%         retDir = fullfile(root, db_den(iDb).morph.expRef{1});
         
-        micronsX = retino.micronsX;
-        micronsY = retino.micronsY;
-        retX = retino.retX{expID};
-        retY = retino.retY{expID};
+        root ='\\zserver.cortexlab.net\Lab\Share\Naureen';
+        retDir = fullfile(root, sprintf('%s_%d', db_den(iDb).animal, db_den(iDb).neuron_id));
+
+        file = sprintf('%s_%d_neuRF_column_svd.mat', db_den(iDb).animal, db_den(iDb).neuron_id);
+%         retino = load(fullfile(retDir, file), 'retX', 'retY', 'micronsX', 'micronsY');
+                retino = load(fullfile(retDir, file));
+                
+
+        micronsX = retino.dbVis.micronsX;
+        micronsY = retino.dbVis.micronsY;
+        retX = retino.dbVis.retX;
+        retY = retino.dbVis.retY;
     catch
         
         root = 'D:\OneDrive - University College London\Data\2P';
@@ -33,6 +41,8 @@ for iDb = 1:nDb
         micronsY = retino.micronsY;
         retX = retino.retX;
         retY = retino.retY;
+        warning('%s_%d not found in Naureen/Data', db_den(iDb).animal, db_den(iDb).neuron_id);
+
     end
     
     
@@ -43,16 +53,22 @@ for iDb = 1:nDb
     file = sprintf('%s_%d_retinotopy.mat', db_den(iDb).animal, db_den(iDb).neuron_id);
     targetFolder = fullfile(dataRchive, sprintf('%s_%d', db_den(iDb).animal, db_den(iDb).neuron_id));
     save(fullfile(targetFolder,file), 'micronsX', 'micronsY', 'retX', 'retY');
+end
     
-    
-    
+    %% sync gratings
+     
+    for iDb = 18%nDb
+
     try
         
-        root = 'C:\Users\Federico\Google Drive\CarandiniLab\CarandiniLab_MATLAB\Data\rvRetinotopy';
-        saveDir = fullfile(root, db_den(1).morph.expRef{1});
-        
+%         root = 'C:\Users\Federico\Google Drive\CarandiniLab\CarandiniLab_MATLAB\Data\rvRetinotopy';
+%         saveDir = fullfile(root, db_den(iDb).morph.expRef{1});
+                root ='\\zserver.cortexlab.net\Lab\Share\Naureen';
+
+                saveDir = fullfile(root, sprintf('%s_%d', db_den(iDb).animal, db_den(iDb).neuron_id));
+
         grat = load(fullfile(saveDir,...
-            [sprintf('Orientation Starter %d',db_den(1).neuron_id)]),...
+            [sprintf('%s_%d_orientationTuning',db_den(iDb).animal, db_den(iDb).neuron_id)]),...
             'responses', 'aveResp', 'seResp', 'kernelTime', 'stimDur', 'stimLabels', ...
             'aveAllResPeak', 'seAllResPeak', 'aveAllResp', 'seAllResp', 'tunePars', ...
             'allResp', 'allResPeak');
@@ -75,6 +91,13 @@ for iDb = 1:nDb
         oris = dirs;
         oris(oris>=180) = oris(oris>=180)-180;
         
+        file = sprintf('%s_%d_gratings.mat', db_den(iDb).animal, db_den(iDb).neuron_id);
+    targetFolder = fullfile(dataRchive, sprintf('%s_%d', db_den(iDb).animal, db_den(iDb).neuron_id));
+
+    save(fullfile(targetFolder, file),...
+        'aveResp', 'seResp', 'time', 'allResp', 'allPeaks', 'avePeak',...
+        'sePeak', 'dirs', 'oris', 'aveOriPeak', 'seOriPeak');
+        
     catch
         
 %       load(fullfile(targetFolder,'tune.mat'));
@@ -89,14 +112,10 @@ for iDb = 1:nDb
 %       oris
 %       aveOriPeak
 %       seOriPeak
+warning('%s_%d', db_den(iDb).animal, db_den(iDb).neuron_id);
     end
     
-    file = sprintf('%s_%d_gratings.mat', db_den(iDb).animal, db_den(iDb).neuron_id);
-    targetFolder = fullfile(dataRchive, sprintf('%s_%d', db_den(iDb).animal, db_den(iDb).neuron_id));
-
-    save(fullfile(targetFolder, file),...
-        'aveResp', 'seResp', 'time', 'allResp', 'allPeaks', 'avePeak',...
-        'sePeak', 'dirs', 'oris', 'aveOriPeak', 'seOriPeak');
+    
     
     
     
