@@ -7,7 +7,7 @@ if ispc
 else
     data_repo = '/Users/lfedros/OneDrive - University College London/Data/Dendrites';
 end
-% %% Spine morphology datasets
+%% Spine morphology datasets
 i = i+1;
 db(i).animal         = 'FR187';     % animal ID
 db(i).neuron_id      = 1;           % neuron ID within the brain
@@ -60,6 +60,65 @@ db(i).data_repo      = data_repo;   % where the data live
 db(i).morph.expRef   = {'FR224', '2022-08-03', 10}; % expref of morphological zstack {'animal_name', 'expDate', expnum} 
 db(i).morph.tilt     = [0, 0];         % angle betwen brain surface and coverslip [rostro-caudal, medio-lateral]
 db(i).morph.zoom     = 15;         % this is the zoom of the individual stacks
+db(i).morph.zStep    = 1;           % spacing between planes of zstack in microns
+db(i).morph.somaZ    = [];         % depth of the soma measured from pia in microns
+db(i).morph.upSamp    = 1;          % upsampling factor for morphological tracing
+
+
+i = i+1;
+db(i).animal         = 'FR171';     % animal ID
+db(i).neuron_id      = 9;           % neuron ID within the brain
+db(i).data_repo      = data_repo;   % where the data live
+db(i).morph.expRef   = {'FR171', '2020-10-04', 1}; % expref of morphological zstack {'animal_name', 'expDate', expnum} 
+db(i).morph.tilt     = [0, 0];         % angle betwen brain surface and coverslip [rostro-caudal, medio-lateral]
+db(i).morph.zoom     = 6.1;         % this is the zoom of the individual stacks
+db(i).morph.zStep    = 1;           % spacing between planes of zstack in microns
+db(i).morph.somaZ    = [];         % depth of the soma measured from pia in microns
+db(i).morph.upSamp    = 1;          % upsampling factor for morphological tracing
+
+
+i = i+1;
+db(i).animal         = 'FR184';     % animal ID
+db(i).neuron_id      = 3;           % neuron ID within the brain
+db(i).data_repo      = data_repo;   % where the data live
+db(i).morph.expRef   = {'FR184', '2021-03-30', 3}; % expref of morphological zstack {'animal_name', 'expDate', expnum} 
+db(i).morph.tilt     = [0, 0];         % angle betwen brain surface and coverslip [rostro-caudal, medio-lateral]
+db(i).morph.zoom     = 6.1;         % this is the zoom of the individual stacks
+db(i).morph.zStep    = 1;           % spacing between planes of zstack in microns
+db(i).morph.somaZ    = [];         % depth of the soma measured from pia in microns
+db(i).morph.upSamp    = 1;          % upsampling factor for morphological tracing
+
+i = i+1;
+db(i).animal         = 'FR227';     % animal ID
+db(i).neuron_id      = 1;           % neuron ID within the brain
+db(i).data_repo      = data_repo;   % where the data live
+db(i).morph.expRef   = {'FR227', '2022-12-01', 12}; % expref of morphological zstack {'animal_name', 'expDate', expnum} 
+db(i).morph.tilt     = [0, 0];         % angle betwen brain surface and coverslip [rostro-caudal, medio-lateral]
+db(i).morph.zoom     = 15.1;         % this is the zoom of the individual stacks
+db(i).morph.zStep    = 1;           % spacing between planes of zstack in microns
+db(i).morph.somaZ    = [];         % depth of the soma measured from pia in microns
+db(i).morph.upSamp    = 1;          % upsampling factor for morphological tracing
+
+
+i = i+1;
+db(i).animal         = 'FR227';     % animal ID
+db(i).neuron_id      = 2;           % neuron ID within the brain
+db(i).data_repo      = data_repo;   % where the data live
+db(i).morph.expRef   = {'FR227', '2022-12-01', 12}; % expref of morphological zstack {'animal_name', 'expDate', expnum} 
+db(i).morph.tilt     = [0, 0];         % angle betwen brain surface and coverslip [rostro-caudal, medio-lateral]
+db(i).morph.zoom     = 15.1;         % this is the zoom of the individual stacks
+db(i).morph.zStep    = 1;           % spacing between planes of zstack in microns
+db(i).morph.somaZ    = [];         % depth of the soma measured from pia in microns
+db(i).morph.upSamp    = 1;          % upsampling factor for morphological tracing
+
+
+i = i+1;
+db(i).animal         = 'FR227';     % animal ID
+db(i).neuron_id      = 3;           % neuron ID within the brain
+db(i).data_repo      = data_repo;   % where the data live
+db(i).morph.expRef   = {'FR227', '2022-12-01', 12}; % expref of morphological zstack {'animal_name', 'expDate', expnum} 
+db(i).morph.tilt     = [0, 0];         % angle betwen brain surface and coverslip [rostro-caudal, medio-lateral]
+db(i).morph.zoom     = 15.1;         % this is the zoom of the individual stacks
 db(i).morph.zStep    = 1;           % spacing between planes of zstack in microns
 db(i).morph.somaZ    = [];         % depth of the soma measured from pia in microns
 db(i).morph.upSamp    = 1;          % upsampling factor for morphological tracing
