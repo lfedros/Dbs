@@ -391,7 +391,7 @@ db(i).morph.upSamp    = NaN;          % upsampling factor for morphological trac
 db(i).retino.expRef  =  {'FR234', '2023-04-18', 4};   % expref of best retinotopy {'animal_name', 'expDate', expnum} 
 db(i).retino.expID   = 1;           % best retinotopy exp ID
 db(i).retino.zoom    = 'lilrig_intrinsic';         % imaging zoom for retinotopy
-db(i).retino.somaIJ  = [80 84];   % position of the soma on the retinotopy FOV in pixels from top left corner
+db(i).retino.somaIJ  = [168,176];   % position of the soma on the retinotopy FOV in pixels from top left corner
 db(i).prefDir        = [];         % preferred orientation measured at the soma
 
 i = i+1;
@@ -410,7 +410,7 @@ db(i).morph.upSamp    = NaN;          % upsampling factor for morphological trac
 db(i).retino.expRef  =  {'FR234', '2023-04-18', 4};   % expref of best retinotopy {'animal_name', 'expDate', expnum} 
 db(i).retino.expID   = 1;           % best retinotopy exp ID
 db(i).retino.zoom    = 'lilrig_intrinsic';         % imaging zoom for retinotopy
-db(i).retino.somaIJ  = [80 84];   % position of the soma on the retinotopy FOV in pixels from top left corner
+db(i).retino.somaIJ  = [168,176];   % position of the soma on the retinotopy FOV in pixels from top left corner
 db(i).prefDir        = [];         % preferred orientation measured at the soma
 
 
