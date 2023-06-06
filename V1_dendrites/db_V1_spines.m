@@ -413,5 +413,22 @@ db(i).retino.zoom    = 'lilrig_intrinsic';         % imaging zoom for retinotopy
 db(i).retino.somaIJ  = [80 84];   % position of the soma on the retinotopy FOV in pixels from top left corner
 db(i).prefDir        = [];         % preferred orientation measured at the soma
 
-
+i = i+1;
+db(i).animal         = 'FR234';     % animal ID
+db(i).neuron_id      = 15;           % neuron ID within the brain
+db(i).data_repo      = data_repo;   % where the data live
+db(i).mic2p         = 'b2';   % where 2P imaging was done
+db(i).morph.expRef   = {'FR234', '2023-04-18', 4}; % expref of morphological zstack {'animal_name', 'expDate', expnum} 
+db(i).morph.tilt     = [0, 0];         % angle betwen brain surface and coverslip [rostro-caudal, medio-lateral]
+db(i).morph.zoom     = NaN;         % imaging zoom for morphological zstack
+db(i).morph.zStep    = NaN;           % spacing between planes of zstack in microns
+db(i).morph.somaZ    = NaN;         % depth of the soma measured from pia in microns
+% db(i).morph.apicalNode    = [];         % root node of the apical dendrite
+db(i).morph.upSamp    = NaN;          % upsampling factor for morphological tracing
+% db(i).morph.dendrotomy    = {0, []}; 
+db(i).retino.expRef  =  {'FR234', '2023-04-18', 4};   % expref of best retinotopy {'animal_name', 'expDate', expnum} 
+db(i).retino.expID   = 1;           % best retinotopy exp ID
+db(i).retino.zoom    = 'lilrig_intrinsic';         % imaging zoom for retinotopy
+db(i).retino.somaIJ  = [80 84];   % position of the soma on the retinotopy FOV in pixels from top left corner
+db(i).prefDir        = [];         % preferred orientation measured at the soma
 
